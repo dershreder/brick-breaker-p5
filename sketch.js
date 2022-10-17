@@ -1,8 +1,11 @@
 let gameMode = 1
 let gmBUTTON
+function test() {
+  gameMode *= -1
+}
 function setup() {
   gmBUTTON = createButton("setgamemode!!")
-  gmBUTTON.mousePressed(gameMode *= -1)
+  gmBUTTON.mousePressed(test)
   gmBUTTON.position(0, 0)
   angleMode(DEGREES)
   createCanvas(400, 400);
